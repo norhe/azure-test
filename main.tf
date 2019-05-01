@@ -152,6 +152,8 @@ resource "azurerm_virtual_machine" "ehron-vm-1" {
 
     tags {
         environment = "Terraform Demo"
+        TTL = "24h"
+        Owner = "Ehron"
     }
 }
 
@@ -188,6 +190,8 @@ resource "azurerm_virtual_machine" "ehron-vm-2" {
 
     tags {
         environment = "Terraform Demo"
+        TTL = "72h"
+        Owner = "Ehron"
     }
 }
 
