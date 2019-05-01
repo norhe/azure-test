@@ -191,5 +191,8 @@ resource "azurerm_virtual_machine" "ehron-vm-2" {
 
   tags {
     environment = "Terraform Demo"
+
+    TTL = "24h"
+    Owner = "Ehron"
   }
 }
